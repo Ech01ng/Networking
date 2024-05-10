@@ -22,9 +22,13 @@ The transport layer ensures reliable and efficient end-to-end delivery of data b
 
 Segmentation in the transport layer involves breaking down a large data stream into smaller segments. This is done to improve efficiency and reliability during transmission. Each segment is assigned a sequence number for proper reassembly at the receiving end.
 
-### Error Control
+### Error Control:
 
-When pieces of data never arrive to it's destination, it uses <b>Automatic Repeat Requests</b> to retransmit the lost or corrupted data
+When pieces of data never arrive to it's destination, it uses <b>Automatic Repeat Requests</b> to retransmit the lost or corrupted data. A group of pairs called <b>Checksum</b> is added to each segment by the transport layer to check for corrupted data.
+
+### Flow Control:
+
+When a device (like a server) is transmitting data to another device (like a phone) it allows to send a signal to regulate the traffic. If the server can transfer data at 100mbp/s but the phone can only recieve 20mbp/s, the phone will send a signal to decrease the transfer rate to minimize lost data, likewise if it needs to increase transfer rate to maintain device efficiency.
 
 Learning till Here for exam ^
 
