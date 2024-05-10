@@ -12,11 +12,25 @@ The data link layer provides reliable and error-free transmission of data frames
 
 ## 3. Network Layer
 
-The network layer is responsible for the delivery of packets from the source to the destination across multiple networks. It deals with routing, logical addressing, and congestion control.
+From the Transport Layer, it passes segments to the Network Layer
+
+The network layer is responsible for the delivery of packets from the source to the destination across multiple networks (i.e: from one computer to another located in different networks). It deals with routing, logical addressing, and congestion control.
+
+Data units in this layer are called <b>Packets</b>.
+
+Functions for the Network Layer include logical addressing, path determination and routing.
+
+### Logical Addressing:
+
+Ip addressing done in the Network Layer is caleed Logical <b>Addressing</b> (IPv4 & IPv6)
+
+The Network Layer assigns senders and recievers IP addresses to each segment to formulate the packet, IP addressing are assigned in sure so that each data packet can reachthe correct destination.
+
+### Routing
 
 ## 4. Transport Layer
 
-The transport layer ensures reliable and efficient end-to-end delivery of data between hosts. It provides services such as segmentation, error control, and flow control.
+The transport layer ensures reliable and efficient end-to-end delivery of data between hosts. It provides services such as segmentation, error control, flow control, connection and connectionless transmission.
 
 ### Segmentation:
 
@@ -29,6 +43,15 @@ When pieces of data never arrive to it's destination, it uses <b>Automatic Repea
 ### Flow Control:
 
 When a device (like a server) is transmitting data to another device (like a phone) it allows to send a signal to regulate the traffic. If the server can transfer data at 100mbp/s but the phone can only recieve 20mbp/s, the phone will send a signal to decrease the transfer rate to minimize lost data, likewise if it needs to increase transfer rate to maintain device efficiency.
+
+### Protocols:
+
+- Connection-oriented Teansmission -> Transmission Control Protocol (TCP)
+- Connectionless Transmission -> User Datagram Protocol (UDP)
+
+UDP is slower than TCP as there is no feedback, but due to that lost data can only be trnasmitted in TCP
+Hence UDP is used for things that we don't require the full picture like: Streaming, Music, Games, VoiP, DNS.
+While TCP is used for when all the information is needed like: WWW, Emails, File Transfer Protocol (FTP).
 
 Learning till Here for exam ^
 
