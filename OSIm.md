@@ -22,11 +22,13 @@ Functions for the Network Layer include logical addressing, path determination a
 
 ### Logical Addressing:
 
-Ip addressing done in the Network Layer is caleed Logical <b>Addressing</b> (IPv4 & IPv6)
+Ip addressing done in the Network Layer is caleed Logical <b>Addressing</b> (IPv4 & IPv6 + Subnet Mask)
 
 The Network Layer assigns senders and recievers IP addresses to each segment to formulate the packet, IP addressing are assigned in sure so that each data packet can reachthe correct destination.
 
-### Routing
+### Routing:
+
+Is the method of moving the <b>Data Packet</b> from source to destination and it is based on the <b>Logical Addressing</b> format of IPv4 or IPv6
 
 ## 4. Transport Layer
 
