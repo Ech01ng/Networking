@@ -28,7 +28,9 @@ The Network Layer assigns senders and recievers IP addresses to each segment to 
 
 ### Routing:
 
-Is the method of moving the <b>Data Packet</b> from source to destination and it is based on the <b>Logical Addressing</b> format of IPv4 or IPv6
+Is the method of moving the <b>Data Packet</b> from source to destination and it is based on the <b>Logical Addressing</b> format of IPv4 or IPv6.
+
+Let's say from device B a request to access GitHub is sent ot the GitHub server which has a unique IP address, it then replies with the packet being sent to device B's unique IP address to make sure only that device has access to the page. the <b>Network Layer</b> of the server has already assigned a sender and reciever IP address in the packet, let's say the mask is 225.225.225.0, the first combination represents the network and the lst combination represents the device in the network
 
 ## 4. Transport Layer
 
