@@ -113,3 +113,15 @@ The presentation layer is responsible for the formatting and representation of d
 ## 7. Application Layer
 
 The application layer provides services directly to the end-user applications. It includes protocols for specific applications such as HTTP, FTP, SMTP, etc.
+
+## De-encapsulation
+
+De-encapsulation, refers to the process of removing the headers and trailers (Additional information that is added to the beginning and end of a data packet) added to a packet at each layer of the network protocol stack as it travels from the source to the destination.
+
+When data is transmitted over a network, it is encapsulated at each layer with additional information specific to that layer. This additional information includes headers, which contain control and addressing information, and trailers, which provide error detection and correction capabilities.
+
+De-encapsulation occurs at the receiving end of the communication, where the headers and trailers are sequentially removed layer by layer. This process allows the receiving device to extract the original data payload from the received packet.
+
+For example, in the case of the TCP/IP protocol suite, de-encapsulation involves removing the Ethernet header, IP header, TCP header, and any other encapsulation layers added during transmission. Once the de-encapsulation process is complete, the original data can be processed and delivered to the appropriate application or service.
+
+De-encapsulation is an essential part of the network communication process as it allows the receiving device to interpret and utilize the received data correctly.
