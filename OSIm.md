@@ -8,6 +8,13 @@ The physical layer is responsible for the transmission and reception of raw data
 
 ## 2. Data Link Layer
 
+Recieves Packets from the <b>Network Layer</b>.
+
+There are 2 kinds of addressing:
+
+- Logical Addressing -> Done at Network Layer where IP addresses of the sender an reciever are assigned to form a data packet
+- Physical Addressing -> Done at Data Link Layer where the MAC address of both the sender and reciever are assigned to the data packet from the Network Layer
+
 The data link layer provides reliable and error-free transmission of data frames between two adjacent nodes on a network. It handles framing, error detection and correction, and flow control.
 
 ## 3. Network Layer
@@ -30,7 +37,19 @@ The Network Layer assigns senders and recievers IP addresses to each segment to 
 
 Is the method of moving the <b>Data Packet</b> from source to destination and it is based on the <b>Logical Addressing</b> format of IPv4 or IPv6.
 
-Let's say from device B a request to access GitHub is sent ot the GitHub server which has a unique IP address, it then replies with the packet being sent to device B's unique IP address to make sure only that device has access to the page. the <b>Network Layer</b> of the server has already assigned a sender and reciever IP address in the packet, let's say the mask is 225.225.225.0, the first combination represents the network and the lst combination represents the device in the network
+Let's say from device B a request to access GitHub is sent ot the GitHub server which has a unique IP address, it then replies with the packet being sent to device B's unique IP address to make sure only that device has access to the page. the <b>Network Layer</b> of the server has already assigned a sender and reciever IP address in the packet, let's say the mask is 225.225.225.0, the first combination represents the network and the lst combination represents the device in the network. Based on this the packet will go first to the network where the devide is located, then to the device requesting access.
+
+### Path Determination:
+
+A computer can be connected to an internet server through a number of ways, choosing the fastest path from the sender to the reciever is called <b>Path Determination</b>.
+
+Layer 3 devices uses protocols such as:
+
+- Open Shortest Path First (OSPF)
+- Border Gateway Protocol (BGP)
+- Intermediate System to Intermidiate System (IS-IS)
+
+To determain the best possible path for data delivery.
 
 ## 4. Transport Layer
 
