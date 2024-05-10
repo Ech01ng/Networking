@@ -18,6 +18,12 @@ The network layer is responsible for the delivery of packets from the source to 
 
 The transport layer ensures reliable and efficient end-to-end delivery of data between hosts. It provides services such as segmentation, reassembly, error recovery, and flow control.
 
+<h2>Segmentation:</h2>
+
+Segmentation in the transport layer involves breaking down a large data stream into smaller segments. This is done to improve efficiency and reliability during transmission. Each segment is assigned a sequence number for proper reassembly at the receiving end.
+
+<h2>
+
 Learning till Here for exam ^
 
 ---
